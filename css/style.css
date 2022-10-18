@@ -15,6 +15,16 @@ ul {
 a {
   text-decoration: none;
   color: #ffffff;
+  display: inline-block;
+  padding: 10px;
+}
+
+li:not(:last-child):hover {
+  background-color: #d01418;
+}
+
+a:active {
+  background-color: #d15457;
 }
 
 header {
@@ -48,10 +58,7 @@ header h1 span {
 
 header nav ul {
   display: flex;
-}
-
-header nav ul li {
-  margin-left: 8px;
+  align-items: center;
 }
 
 header nav ul li a i {
