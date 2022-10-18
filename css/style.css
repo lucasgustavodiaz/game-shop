@@ -23,8 +23,10 @@ li:not(:last-child):hover {
   background-color: #d01418;
 }
 
-a:active {
-  background-color: #d15457;
+nav ul li a::before {
+  margin-right: 10px;
+  font: var(--fa-font-solid);
+  content: '\f11b';
 }
 
 header {
