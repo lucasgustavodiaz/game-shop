@@ -73,11 +73,6 @@ nav ul li a::before {
   content: '\f11b';
 }
 
-.hamb {
-  color: #d01418;
-  font-size: 25px;
-}
-
 .cart {
   color: #d01418;
   font-size: 25px;
