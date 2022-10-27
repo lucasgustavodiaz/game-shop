@@ -32,6 +32,12 @@ header .logo > img {
   height: 40px;
 }
 
+.hamb {
+  color: #d01418;
+  font-size: 25px;
+  display: none;
+}
+
 header h1 span {
   color: #d01418;
 }
@@ -86,13 +92,32 @@ nav ul li a::before {
   color: #fb4b4e;
 }
 
+.open {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
 @media (max-width: 760px) {
+  nav {
+    display: none;
+    width: 100%;
+  }
+  .hamb {
+    display: inline-block;
+  }
   header {
+    flex-wrap: wrap;
+  }
+  ul {
     flex-direction: column;
   }
-  .logo {
-    margin-bottom: 20px;
+  .cart {
+    display: none;
   }
+  /* .logo {
+    margin-bottom: 20px;
+  } */
 }
 
 @media (max-width: 360px) {
