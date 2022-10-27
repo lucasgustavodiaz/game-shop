@@ -6,29 +6,6 @@ body {
   line-height: 1.5;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-  display: inline-block;
-  padding: 10px;
-}
-
-li:not(:last-child):hover {
-  background-color: #d01418;
-}
-
-nav ul li a::before {
-  margin-right: 10px;
-  font: var(--fa-font-solid);
-  content: '\f11b';
-}
-
 header {
   background-color: #222222;
   color: #ffffff;
@@ -63,14 +40,57 @@ header nav ul {
   align-items: center;
 }
 
-header nav ul li a i {
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 10px;
+}
+
+nav ul li {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+nav ul li:hover {
+  color: #fb4b4e;
+}
+
+nav ul li a::before {
+  margin-right: 10px;
+  font: var(--fa-font-solid);
+  content: '\f11b';
+}
+
+.hamb {
+  color: #d01418;
+  font-size: 25px;
+}
+
+.cart {
   color: #d01418;
   font-size: 25px;
   margin-left: 38px;
   font-weight: 700;
+  transition: all 0.3s ease;
 }
 
-@media (max-width: 620px) {
+.cart:hover {
+  color: #fb4b4e;
+}
+
+@media (max-width: 760px) {
   header {
     flex-direction: column;
   }
